@@ -90,3 +90,68 @@ fabric.properties
 !.idea/runConfigurations
 
 # End of https://www.toptal.com/developers/gitignore/api/webstorm+all
+
+
+
+# Back-end
+/chair-back-end/HELP.md
+/chair-back-end/target/
+/chair-back-end/!.mvn/wrapper/maven-wrapper.jar
+/chair-back-end/!**/src/main/**/target/
+/chair-back-end/!**/src/test/**/target/
+
+### STS ###
+/chair-back-end/.apt_generated
+/chair-back-end/.classpath
+/chair-back-end/.factorypath
+/chair-back-end/.project
+/chair-back-end/.settings
+/chair-back-end/.springBeans
+/chair-back-end/.sts4-cache
+
+### IntelliJ IDEA ###
+/chair-back-end/.idea
+/chair-back-end/*.iws
+/chair-back-end/*.iml
+/chair-back-end/*.ipr
+
+### NetBeans ###
+/chair-back-end/nbproject/private/
+/chair-back-end/nbbuild/
+/chair-back-end/dist/
+/chair-back-end/nbdist/
+/chair-back-end/.nb-gradle/
+/chair-back-end/build/
+/chair-back-end/!**/src/main/**/build/
+/chair-back-end/!**/src/test/**/build/
+
+### VS Code ###
+/chair-back-end/.vscode/
+
+
+#Front-end
+
+# Logs
+chair-front-end/logs
+chair-front-end/*.log
+chair-front-end/npm-debug.log*
+chair-front-end/yarn-debug.log*
+chair-front-end/yarn-error.log*
+chair-front-end/pnpm-debug.log*
+chair-front-end/lerna-debug.log*
+chair-front-end/
+chair-front-end/node_modules
+chair-front-end/dist
+chair-front-end/dist-ssr
+chair-front-end/*.local
+
+# Editor directories and files
+chair-front-end/.vscode/*
+chair-front-end/!.vscode/extensions.json
+chair-front-end/.idea
+chair-front-end/.DS_Store
+chair-front-end/*.suo
+chair-front-end/*.ntvs*
+chair-front-end/*.njsproj
+chair-front-end/*.sln
+chair-front-end/*.sw?
