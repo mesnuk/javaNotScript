@@ -1,0 +1,29 @@
+.header {
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+
+    button {
+      background: none;
+      border: none;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 60px;
+  }
+
+
+  @media screen and (max-width: 1200px) {
+
+    &__container {
+      padding: 20px 28px;
+    }
+    &__wrapper {
+      gap: 30px;
+    }
+  }
+}
