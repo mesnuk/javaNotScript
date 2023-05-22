@@ -1,0 +1,33 @@
+.create_form {
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    gap: 20px;
+    font-size: 18px;
+
+
+
+    label {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      flex-grow: 1;
+
+      input {
+        flex-grow: 1;
+        height: 22px;
+        font-size: 18px;
+        padding: 3px 5px;
+      }
+    }
+
+    button {
+      padding: 10px;
+      background: none;
+      border: 1px solid #000;
+      cursor: pointer;
+    }
+  }
+}

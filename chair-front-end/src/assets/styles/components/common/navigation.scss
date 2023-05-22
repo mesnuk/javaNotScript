@@ -1,0 +1,39 @@
+.navigation {
+
+  &__container {
+    display: flex;
+    gap: 47px;
+    align-items: center;
+    img {
+      fill: #fff;
+    }
+    button {
+      background: none;
+      border: none;
+    }
+  }
+
+  &__link {
+    color: #1F1F1F;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+  }
+
+  @media screen and (max-width: 1200px) {
+
+    &__container {
+      gap: 20px;
+    }
+    &__link {
+      font-size: 16px;
+    }
+  }
+}
+.active {
+  color: #000;
+  font-weight: 600;
+}
