@@ -139,11 +139,8 @@ chair-front-end/yarn-debug.log*
 chair-front-end/yarn-error.log*
 chair-front-end/pnpm-debug.log*
 chair-front-end/lerna-debug.log*
-chair-front-end/
 chair-front-end/node_modules
-chair-front-end/dist
-chair-front-end/dist-ssr
-chair-front-end/*.local
+
 
 # Editor directories and files
 chair-front-end/.vscode/*
