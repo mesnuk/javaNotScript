@@ -44,7 +44,6 @@ public class SubjectController {
     public ResponseEntity<Subject> updateSubject(@PathVariable Long id, @RequestBody Subject subject) {
         Optional<Subject> existingSubject = subjectRepository.findById(id);
         if (existingSubject.isPresent()) {
-            subject.setId(id);
             Subject updatedSubject = subjectRepository.save(subject);
             return ResponseEntity.ok(updatedSubject);
         }

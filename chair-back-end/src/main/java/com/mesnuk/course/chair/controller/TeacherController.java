@@ -2,6 +2,7 @@ package com.mesnuk.course.chair.controller;
 
 import com.mesnuk.course.chair.domain.Teacher;
 import com.mesnuk.course.chair.repository.TeacherRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,10 +12,11 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
+@RequiredArgsConstructor
 @RequestMapping("/api/teachers")
 public class TeacherController {
-    @Autowired
-    private TeacherRepository teacherRepository;
+
+    private final TeacherRepository teacherRepository;
 
     @GetMapping
     public ResponseEntity<List<Teacher>> getAllTeachers() {
