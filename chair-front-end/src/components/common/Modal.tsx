@@ -3,7 +3,7 @@ import {useEffect} from "react";
 import {UpdateForm} from "./UpdateForm";
 import {useClickOutside} from "../../hooks";
 
-export const Modal = ({ type,id, title, handleClose, element}) => {
+export const Modal = ({ type,id, title, handleClose, element, setData}) => {
     const {ref} = useClickOutside(handleClose)
     useEffect(() => {
         return () => handleClose();
@@ -17,7 +17,7 @@ export const Modal = ({ type,id, title, handleClose, element}) => {
                     X
                 </button>
             </div>
-                <UpdateForm type={type} id={id} closeModal={handleClose} element={element}/>
+                <UpdateForm type={type} id={id} closeModal={handleClose} element={element} setData={setData}/>
         </div>
     </div>
 }
