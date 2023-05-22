@@ -4,6 +4,7 @@ import com.mesnuk.course.chair.domain.Speciality;
 import com.mesnuk.course.chair.domain.Subject;
 import com.mesnuk.course.chair.repository.SpecialityRepository;
 import jakarta.validation.Valid;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -14,11 +15,12 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/specialities")
+@RequiredArgsConstructor
+@RequestMapping("/api/speciality")
 public class SpecialityController {
 
-    @Autowired
-    private SpecialityRepository specialityRepository;
+
+    private final SpecialityRepository specialityRepository;
 
     @GetMapping
     public List<Speciality> getAllSpecialities() {

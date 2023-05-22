@@ -5,17 +5,18 @@ import java.util.Optional;
 
 import com.mesnuk.course.chair.domain.Chair;
 import com.mesnuk.course.chair.repository.ChairRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@RequiredArgsConstructor
 @RequestMapping("/api/chairs")
 public class ChairController {
 
-    @Autowired
-    private ChairRepository chairRepository;
+    private final ChairRepository chairRepository;
 
     @GetMapping
     public List<Chair> getAllChairs() {

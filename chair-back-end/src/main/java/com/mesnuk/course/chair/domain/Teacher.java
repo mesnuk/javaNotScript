@@ -1,23 +1,36 @@
 package com.mesnuk.course.chair.domain;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
 @Table(name = "teachers")
+@Setter @Getter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Teacher {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String name;
+    @Column
     private String firstName;
-    private String lastName;
-    private String email;
-    private Long chairId;
-    private String rank;
-    private String role;
-    private String password;
 
-    public void setId(Long id) {
-    }
+    @Column
+    private String lastName;
+
+    @Column
+    private String email;
+
+    @Column
+    private String rank;
+
+    @Column
+    private String role;
+
+
 }
